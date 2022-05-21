@@ -15,7 +15,8 @@
     the `--base-href` argument provided to `flutter build`.
   -->
   <base href="/hdtc_web/">
-  <!----  <base href="https://nejim-jeb.github.io/web_test/">
+ <!----  <base href="/">
+ <base href="https://nejim-jeb.github.io/web_test/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -40,7 +41,7 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = '3766101348';
+    var serviceWorkerVersion = '3242366988';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -48,6 +49,8 @@
       }
       scriptLoaded = true;
       var scriptTag = document.createElement('script');
+      // line below added by me 
+      document.addEventListener('touchstart', {});
       scriptTag.src = 'main.dart.js';
       scriptTag.type = 'application/javascript';
       document.body.append(scriptTag);
